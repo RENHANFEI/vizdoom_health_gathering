@@ -1,0 +1,95 @@
+Format: 1.8
+Date: Sun, 11 Dec 2016 15:18:05 +0100
+Source: xscreensaver
+Binary: xscreensaver xscreensaver-data xscreensaver-data-extra xscreensaver-gl xscreensaver-gl-extra xscreensaver-screensaver-webcollage xscreensaver-screensaver-bsod
+Architecture: amd64
+Version: 5.36-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Tormod Volden <debian.tormod@gmail.com>
+Changed-By: Tormod Volden <debian.tormod@gmail.com>
+Description:
+ xscreensaver - Screensaver daemon and frontend for X11
+ xscreensaver-data - Screen saver modules for screensaver frontends
+ xscreensaver-data-extra - Extra screen saver modules for screensaver frontends
+ xscreensaver-gl - GL(Mesa) screen saver modules for screensaver frontends
+ xscreensaver-gl-extra - Extra GL(Mesa) screen saver modules for screensaver frontends
+ xscreensaver-screensaver-bsod - BSOD screen saver module from XScreenSaver
+ xscreensaver-screensaver-webcollage - Webcollage screen saver module from XScreenSaver
+Closes: 813395 822621 823049 843610
+Changes:
+ xscreensaver (5.36-1) unstable; urgency=medium
+ .
+   * New upstream release 5.36, changes since 5.34:
+     - New hacks (modes): `dymaxionmap', `unicrud', `energystream',
+       `raverhoop', `hydrostat', `discoball', `cubetwist', `cubestack',
+       `splodesic' and `hexstrut'.
+     - Ignore WM_USER_TIME property changes with days-old timestamps.
+     - Added Windows 10 to `bsod'.
+     - `pong' is now playable.
+     - Several new programs in `m6502'.
+     - `rotzoomer -mode circle'.
+     - Better titles in `photopile'.
+   * Replace dependencies on libjpeg-progs with libjpeg-turbo-progs
+     (Closes: #813395)
+   * debian/patches/12_upstream_hurd-no-pthread_stack_min.patch:
+     Do not check for PTHREAD_STACK_MIN on GNU/Hurd (Closes: #823049)
+   * debian/control: Updated, secure Vcs-Git and Vcs-Browser URI
+   * Bump Standards-Version to 3.9.8 (no changes needed)
+   * Bump debhelper compatibility version to 9
+   * debian/patches/20_hacks_maze_xpm_libs.patch: Deleted (obsolete)
+   * Add patch descriptions (and some bug references) to all patches
+   * debian/rules: Enable all hardening options
+   * debian/control: Remove Enhances (reverse dependencies) and obsolete
+     Breaks, Replaces and versioned dependencies (Closes: #822621)
+   * Ship /usr/lib/systemd/user/xscreensaver.service (Closes: #843610)
+   * debian/patches/75_Makefile_in-ignore-alien-platforms.patch:
+     Do not descend into OSX and android folders in make clean
+Checksums-Sha1:
+ fdaa7674396726c848df3c1c01c499c6d22bc96a 1496354 xscreensaver-data-dbgsym_5.36-1_amd64.deb
+ 1511405a6b4e7eaab43dbc33bd0b9a04352c4ea9 6806516 xscreensaver-data-extra-dbgsym_5.36-1_amd64.deb
+ 730e75943311502ce717a5cb2ebae863d3e7db22 1068248 xscreensaver-data-extra_5.36-1_amd64.deb
+ a45706b1c6c43f263e6c8284ecc062ef7a3dbffa 323308 xscreensaver-data_5.36-1_amd64.deb
+ 82ec2ee82e8ea4524435b2aa1f3feab21c0debef 466732 xscreensaver-dbgsym_5.36-1_amd64.deb
+ 8f3a1f74a2e8798bdfff3b1f91676163db723ba2 8732166 xscreensaver-gl-dbgsym_5.36-1_amd64.deb
+ f5859e0a1d8fe6a564b601ef6a5bd340961ba5bf 5752688 xscreensaver-gl-extra-dbgsym_5.36-1_amd64.deb
+ c65d6c71f7bdd9bc8b2022d11b4a349c13f03bae 1914606 xscreensaver-gl-extra_5.36-1_amd64.deb
+ 7afadb58240b6cbe539383c63b22c0ed8220afab 1403230 xscreensaver-gl_5.36-1_amd64.deb
+ 8919a8e52252c5a87a90bf5e838bde8f6285232f 172750 xscreensaver-screensaver-bsod-dbgsym_5.36-1_amd64.deb
+ c0b075b9702764fec02a7acd561cda367a3f63aa 172344 xscreensaver-screensaver-bsod_5.36-1_amd64.deb
+ e865a2d3030ec9311027b95201a60ac878fc597c 16860 xscreensaver-screensaver-webcollage-dbgsym_5.36-1_amd64.deb
+ a1f492476dc6f0648b9ff497f6000cd44153637e 63536 xscreensaver-screensaver-webcollage_5.36-1_amd64.deb
+ f0d5cece3d12e61d5b65a950bba8fd3d9e2efab8 16307 xscreensaver_5.36-1_amd64.buildinfo
+ 3646ff00f67ceb48ce426394c2d02f31a5055554 565312 xscreensaver_5.36-1_amd64.deb
+Checksums-Sha256:
+ 4a318696953c51373cca4b5b2bfdfd933e3a695280251ea4164bf2049038edf3 1496354 xscreensaver-data-dbgsym_5.36-1_amd64.deb
+ 73a526a7f92d339247aeb91213eaeeb3c419aded10de3f2164332dd57b00ca71 6806516 xscreensaver-data-extra-dbgsym_5.36-1_amd64.deb
+ 9a18ed83e6c38047f6780e00ff2cfe36fc3fbbb38688675be4841025fdd64eed 1068248 xscreensaver-data-extra_5.36-1_amd64.deb
+ 5583f4b14259a0836e838082087d007e1cf926a65e931b3c736c90c3345490be 323308 xscreensaver-data_5.36-1_amd64.deb
+ b146506b70edd8d8c2f4140d8727001f41ea599fe68f944044ccfe44ea139c80 466732 xscreensaver-dbgsym_5.36-1_amd64.deb
+ 259b40538d8cde3e13db4397dc6634d58f8091de0e4d899eea8b1b5d76fefdf8 8732166 xscreensaver-gl-dbgsym_5.36-1_amd64.deb
+ 34f7847cceb8caeddb39cfbed9bf91eb3b5dc2a4ab7c6c74ae3f72a11b1fafaf 5752688 xscreensaver-gl-extra-dbgsym_5.36-1_amd64.deb
+ 489a7e282fe322480db02223f490168c7344d14de39fe7e7e4b4d956e000e91a 1914606 xscreensaver-gl-extra_5.36-1_amd64.deb
+ d078b4c7996e5fb99dcf6043ce979b36c12fb474878b521ac2aedfd030613bfa 1403230 xscreensaver-gl_5.36-1_amd64.deb
+ 9ec125181eca20857010df662d1948b290bbea0e400862b9840d20ef7f0ecc7f 172750 xscreensaver-screensaver-bsod-dbgsym_5.36-1_amd64.deb
+ 9fc22885fb91ecac6deef51751d7e38d65187d20b3a748d7aede2bf63457c3f6 172344 xscreensaver-screensaver-bsod_5.36-1_amd64.deb
+ dee6c177ee49d345da08e92a4be1457f50433384faeffe14052864bd0d1b4d22 16860 xscreensaver-screensaver-webcollage-dbgsym_5.36-1_amd64.deb
+ 77121b31c8f00e781af672f4f6770e0eda15b74741d1efdd22c9c119a2fbb2ed 63536 xscreensaver-screensaver-webcollage_5.36-1_amd64.deb
+ 10cdc76d062ce2ea45ac2d4ee1d43be1c7aab568f4ce7e6834ac591397ea5122 16307 xscreensaver_5.36-1_amd64.buildinfo
+ 59a868e70f241a8f41e904a54c6edadd505d93989c6f49fde6b2ead111a72c39 565312 xscreensaver_5.36-1_amd64.deb
+Files:
+ 83c7788d4fc9f99b6720c31e9de15236 1496354 debug extra xscreensaver-data-dbgsym_5.36-1_amd64.deb
+ 6854719dc51b96953a9562634cd8cf45 6806516 debug extra xscreensaver-data-extra-dbgsym_5.36-1_amd64.deb
+ 46726b0c2a0bb64b277f7815c4e7c5ff 1068248 x11 optional xscreensaver-data-extra_5.36-1_amd64.deb
+ 70c293aeb8eb885f28b0f5ed89fa6b3f 323308 x11 optional xscreensaver-data_5.36-1_amd64.deb
+ b6dfc5d690085267eea875825e194269 466732 debug extra xscreensaver-dbgsym_5.36-1_amd64.deb
+ 7b6103243c3c023fc05c7fcfedce616c 8732166 debug extra xscreensaver-gl-dbgsym_5.36-1_amd64.deb
+ 955188550366eccd28f51939784305ca 5752688 debug extra xscreensaver-gl-extra-dbgsym_5.36-1_amd64.deb
+ eadb00ca015a98bf382c7f5ee8788396 1914606 x11 optional xscreensaver-gl-extra_5.36-1_amd64.deb
+ e10b00dcb82494e130fb5aa81868c4b9 1403230 x11 optional xscreensaver-gl_5.36-1_amd64.deb
+ a305735dc646b8e8a41ec465ce71ccf1 172750 debug extra xscreensaver-screensaver-bsod-dbgsym_5.36-1_amd64.deb
+ 3ec9f70b17cf62f682401f9f04ad0539 172344 x11 optional xscreensaver-screensaver-bsod_5.36-1_amd64.deb
+ c6d5826ac3dd845db2fc846eaaa0d27b 16860 debug extra xscreensaver-screensaver-webcollage-dbgsym_5.36-1_amd64.deb
+ a309935cc65c6f6f71b0065c40243733 63536 x11 optional xscreensaver-screensaver-webcollage_5.36-1_amd64.deb
+ a1fd6017eed9aa00fb615054924fb3b4 16307 x11 optional xscreensaver_5.36-1_amd64.buildinfo
+ d24502fa6997996c77d999e7ef135077 565312 x11 optional xscreensaver_5.36-1_amd64.deb

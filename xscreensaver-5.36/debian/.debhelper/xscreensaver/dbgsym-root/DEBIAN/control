@@ -1,0 +1,13 @@
+Package: xscreensaver-dbgsym
+Source: xscreensaver
+Version: 5.36-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Tormod Volden <debian.tormod@gmail.com>
+Installed-Size: 523
+Depends: xscreensaver (= 5.36-1)
+Section: debug
+Priority: extra
+Homepage: http://www.jwz.org/xscreensaver/
+Description: Debug symbols for xscreensaver
+Build-Ids: 5194dfb1d15a2b05b581a367e858d66b939df307 5a8884b51ff9e423cb533f839debbdb75aac8045 c7cca3cfe06f14fd56828f6e081171a0190e14b6

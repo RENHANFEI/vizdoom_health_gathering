@@ -1,0 +1,13 @@
+Package: xscreensaver-screensaver-bsod-dbgsym
+Source: xscreensaver
+Version: 5.36-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Tormod Volden <debian.tormod@gmail.com>
+Installed-Size: 195
+Depends: xscreensaver-screensaver-bsod (= 5.36-1)
+Section: debug
+Priority: extra
+Homepage: http://www.jwz.org/xscreensaver/
+Description: Debug symbols for xscreensaver-screensaver-bsod
+Build-Ids: d7d3fe5b1f2c295315abd1c3d38a662a08755aac

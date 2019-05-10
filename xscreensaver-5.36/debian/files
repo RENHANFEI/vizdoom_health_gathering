@@ -1,0 +1,15 @@
+xscreensaver-data-dbgsym_5.36-1_amd64.deb debug extra
+xscreensaver-data-extra-dbgsym_5.36-1_amd64.deb debug extra
+xscreensaver-data-extra_5.36-1_amd64.deb x11 optional
+xscreensaver-data_5.36-1_amd64.deb x11 optional
+xscreensaver-dbgsym_5.36-1_amd64.deb debug extra
+xscreensaver-gl-dbgsym_5.36-1_amd64.deb debug extra
+xscreensaver-gl-extra-dbgsym_5.36-1_amd64.deb debug extra
+xscreensaver-gl-extra_5.36-1_amd64.deb x11 optional
+xscreensaver-gl_5.36-1_amd64.deb x11 optional
+xscreensaver-screensaver-bsod-dbgsym_5.36-1_amd64.deb debug extra
+xscreensaver-screensaver-bsod_5.36-1_amd64.deb x11 optional
+xscreensaver-screensaver-webcollage-dbgsym_5.36-1_amd64.deb debug extra
+xscreensaver-screensaver-webcollage_5.36-1_amd64.deb x11 optional
+xscreensaver_5.36-1_amd64.buildinfo x11 optional
+xscreensaver_5.36-1_amd64.deb x11 optional
