@@ -1,0 +1,98 @@
+INFO [27919] - 05/09/19 16:11:54 - 0:00:00 - ========== Running DOOM ==========
+INFO [27919] - 05/09/19 16:11:54 - 0:00:00 - Experiment will be saved in: ./dumped/default/42fs1xu9pz
+INFO [27919] - 05/09/19 16:11:54 - 0:00:00 - scenario: health_gathering
+                                             map_ids_train: [1]
+                                             map_ids_test: [1]
+                                             freedoom: False
+                                             height: 60
+                                             width: 108
+                                             gray: False
+                                             use_screen_buffer: True
+                                             use_depth_buffer: False
+                                             labels_mapping: 
+                                             game_features: 
+                                             render_hud: False
+                                             render_crosshair: True
+                                             render_weapon: True
+                                             hist_size: 4
+                                             frame_skip: 5
+                                             action_combinations: move_fb;turn_lr
+                                             freelook: False
+                                             speed: off
+                                             crouch: off
+                                             manual_control: False
+                                             players_per_game: 1
+                                             player_rank: 0
+                                             dump_path: ./dumped/default/42fs1xu9pz
+                                             visualize: False
+                                             evaluate: 0
+                                             human_player: False
+                                             reload: 
+                                             dump_freq: 0
+                                             gpu_id: -1
+                                             log_frequency: 100
+                                             network_type: dqn_ff
+                                             use_bn: False
+                                             batch_size: 32
+                                             replay_memory_size: 1000000
+                                             start_decay: 0
+                                             stop_decay: 1000000
+                                             final_decay: 0.1
+                                             gamma: 0.99
+                                             dueling_network: False
+                                             recurrence: 
+                                             clip_delta: 1.0
+                                             variable_dim: [32]
+                                             bucket_size: [1]
+                                             hidden_dim: 512
+                                             update_frequency: 4
+                                             dropout: 0.0
+                                             optimizer: rmsprop,lr=0.0002
+                                             supreme: False
+                                             game_variables: [('health', 101)]
+                                             n_variables: 1
+                                             n_features: 0
+                                             n_fm: 3
+                                             use_continuous: False
+                                             episode_time: 120
+                                             eval_freq: 30000
+                                             eval_episodes: 20
+INFO [27919] - 05/09/19 16:11:54 - 0:00:00 - 9 available buttons: ['MOVE_FORWARD', 'MOVE_BACKWARD', 'TURN_LEFT', 'TURN_RIGHT', 'MOVE_LEFT', 'MOVE_RIGHT', 'ATTACK', 'SPEED', 'CROUCH']
+INFO [27919] - 05/09/19 16:11:54 - 0:00:00 - 8 available actions:
+                                             ['TURN_LEFT']
+                                             ['TURN_RIGHT']
+                                             ['MOVE_FORWARD']
+                                             ['MOVE_FORWARD', 'TURN_LEFT']
+                                             ['MOVE_FORWARD', 'TURN_RIGHT']
+                                             ['MOVE_BACKWARD']
+                                             ['MOVE_BACKWARD', 'TURN_LEFT']
+                                             ['MOVE_BACKWARD', 'TURN_RIGHT']
+INFO [27919] - 05/09/19 16:11:54 - 0:00:00 - Reward values:
+INFO [27919] - 05/09/19 16:11:54 - 0:00:00 - {'BASE_REWARD': 0.01, 'DISTANCE': 0.0, 'KILL': 5.0, 'DEATH': -5.0, 'SUICIDE': -5.0, 'MEDIKIT': 1, 'ARMOR': 1.0, 'INJURED': 0, 'WEAPON': 1.0, 'AMMO': 1.0, 'USE_AMMO': -0.2}
+INFO [27919] - 05/09/19 16:11:54 - 0:00:00 - Input shape: (3, 60, 108)
+INFO [27919] - 05/09/19 16:11:54 - 0:00:00 - Conv layer output dim : 4608
+INFO [27919] - 05/09/19 16:11:54 - 0:00:00 - Hidden layer input dim: 4640
+INFO [27919] - 05/09/19 16:11:54 - 0:00:00 - Starting experiment...
+INFO [27919] - 05/09/19 16:11:54 - 0:00:00 - Training on map 1 ...
+INFO [27919] - 05/09/19 16:12:06 - 0:00:12 - === Iteration 400
+INFO [27919] - 05/09/19 16:12:06 - 0:00:12 - DQN loss: 0.14820
+INFO [27919] - 05/09/19 16:12:19 - 0:00:25 - === Iteration 800
+INFO [27919] - 05/09/19 16:12:19 - 0:00:25 - DQN loss: 0.14946
+INFO [27919] - 05/09/19 16:12:31 - 0:00:37 - === Iteration 1200
+INFO [27919] - 05/09/19 16:12:31 - 0:00:37 - DQN loss: 0.20323
+INFO [27919] - 05/09/19 16:12:43 - 0:00:49 - === Iteration 1600
+INFO [27919] - 05/09/19 16:12:43 - 0:00:49 - DQN loss: 0.14955
+INFO [27919] - 05/09/19 16:12:55 - 0:01:01 - === Iteration 2000
+INFO [27919] - 05/09/19 16:12:55 - 0:01:01 - DQN loss: 0.21630
+INFO [27919] - 05/09/19 16:13:08 - 0:01:14 - === Iteration 2400
+INFO [27919] - 05/09/19 16:13:08 - 0:01:14 - DQN loss: 0.17118
+INFO [27919] - 05/09/19 16:13:20 - 0:01:27 - === Iteration 2800
+INFO [27919] - 05/09/19 16:13:20 - 0:01:27 - DQN loss: 0.18657
+INFO [27919] - 05/09/19 16:13:33 - 0:01:39 - === Iteration 3200
+INFO [27919] - 05/09/19 16:13:33 - 0:01:39 - DQN loss: 0.21643
+INFO [27919] - 05/09/19 16:13:45 - 0:01:51 - === Iteration 3600
+INFO [27919] - 05/09/19 16:13:45 - 0:01:51 - DQN loss: 0.20085
+INFO [27919] - 05/09/19 16:13:58 - 0:02:04 - === Iteration 4000
+INFO [27919] - 05/09/19 16:13:58 - 0:02:04 - DQN loss: 0.19552
+INFO [27919] - 05/09/19 16:14:10 - 0:02:16 - === Iteration 4400
+INFO [27919] - 05/09/19 16:14:10 - 0:02:16 - DQN loss: 0.24211
